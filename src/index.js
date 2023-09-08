@@ -1,12 +1,7 @@
-import ReactDOM from 'react-dom'
 import React from 'react'
 import "./index.css"
-import Primeiro from './components/basicos/Primeiro'
-import ComParametro from './components/basicos/ComParametro'
-ReactDOM.render(
-    <div>
-        <Primeiro></Primeiro>
-        <ComParametro titulo="primeiro titulo" subtitulo="segundo titulo"></ComParametro>    
-    </div>,
-    document.getElementById('root')
-)
+import App from './App'
+import { createRoot } from 'react-dom/client';
+const container = document.getElementById('App');
+const root = createRoot(container);
+root.render(<App></App>);
