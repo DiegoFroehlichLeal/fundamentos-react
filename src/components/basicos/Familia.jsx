@@ -1,7 +1,6 @@
 import React, { cloneElement } from "react";
 
 const Familia = (props) => {
-    console.log(props)
     return (
         <div>
             {props.children.map((child, i) => {
